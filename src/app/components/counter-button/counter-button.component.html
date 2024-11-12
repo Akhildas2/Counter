@@ -1,0 +1,14 @@
+<h1>Counter Application</h1>
+<div class="container">
+    <button mat-fab class="custom-decrement" (click)="OnDecrement()">Decrement (-)</button>
+    <app-counter-display></app-counter-display>
+    <button mat-fab class="custom-increment" (click)="OnIncrement()">Increment (+)</button>
+
+</div>
+
+
+<div class="limit-container">
+    <button mat-fab class="custom-reset" (click)="OnReset()">Reset (0)</button>
+    <input type="number" [(ngModel)]="limit" placeholder="Set limit" />
+    <button mat-fab class="custom-set-limit" (click)="OnSetLimit()">Set Limit</button>
+</div>

@@ -1,0 +1,115 @@
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.custom-increment,
+.custom-decrement,
+.custom-reset,
+.custom-set-limit {
+    color: white;
+    width: auto;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+.custom-increment {
+    background-color: #4caf50;
+}
+
+.custom-decrement {
+    background-color: #2196f3;
+}
+
+.custom-reset {
+    background-color: #f44336;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.custom-set-limit {
+    background-color: #ff9800;
+}
+
+.limit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: auto;
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .custom-increment,
+    .custom-decrement,
+    .custom-reset,
+    .custom-set-limit {
+        width: auto;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .counter-display {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.25rem;
+        margin-top: 10px;
+    }
+
+    .container {
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+    }
+
+    /* Display above Increment button */
+    .counter-display {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .custom-increment,
+    .custom-decrement,
+    .custom-reset,
+    .custom-set-limit {
+        width: auto;
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+
+}
